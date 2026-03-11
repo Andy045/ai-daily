@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tech Insights - 2026-03-11</title>
+    <style>
+        :root { --bg-color: #0f172a; --card-bg: #1e293b; --accent-color: #38bdf8; --text-main: #f1f5f9; --text-muted: #94a3b8; --nav-bg: rgba(15, 23, 42, 0.8); }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, system-ui, sans-serif; background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; scroll-behavior: smooth; }
+        header { position: sticky; top: 0; z-index: 100; background: var(--nav-bg); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.1); padding: 1rem 2rem; }
+        nav { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; }
+        .logo { font-size: 1.25rem; font-weight: 800; color: var(--accent-color); text-transform: uppercase; letter-spacing: 1px; }
+        .nav-links { display: flex; gap: 1.5rem; }
+        .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; transition: 0.3s; }
+        .nav-links a:hover { color: var(--accent-color); }
+        .container { max-width: 1200px; margin: 2rem auto; padding: 0 1rem; }
+        .section-title { margin: 3rem 0 1.5rem; padding-left: 1rem; border-left: 4px solid var(--accent-color); font-size: 1.5rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 1.5rem; }
+        .card { background: var(--card-bg); border-radius: 12px; padding: 1.5rem; border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); display: flex; flex-direction: column; text-decoration: none; color: inherit; }
+        .card:hover { transform: translateY(-5px); border-color: var(--accent-color); box-shadow: 0 10px 20px -10px rgba(56, 189, 248, 0.3); }
+        .card-tag { font-size: 0.75rem; background: rgba(56, 189, 248, 0.1); color: var(--accent-color); padding: 2px 8px; border-radius: 4px; align-self: flex-start; margin-bottom: 1rem; }
+        .card-title { font-size: 1.15rem; font-weight: 600; margin-bottom: 0.75rem; line-height: 1.4; }
+        .card-summary { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem; flex-grow: 1; }
+        .card-footer { font-size: 0.8rem; color: var(--text-muted); display: flex; justify-content: space-between; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem; }
+        @media (max-width: 768px) { .nav-links { display: none; } .grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">AI Daily Insights</div>
+        <div class="nav-links">
+            <a href="#hot-news">热点新闻</a>
+            <a href="#full-stack">全栈开发</a>
+            <a href="#agent-tools">Agent工具</a>
+            <a href="#mcp-skills">MCP生态</a>
+            <a href="#sdd">SDD规范</a>
+        </div>
+    </nav>
+</header>
+<main class="container">
+    <section id="hot-news">
+        <h2 class="section-title">AI 领域热点新闻</h2>
+        <div class="grid">
+<a href="https://www.zeta-alpha.com/post/trends-in-ai-march-25-ai-agents" class="card" target="_blank">
+    <div class="card-tag">AI Agents</div>
+    <h3 class="card-title">AI Agents — Trends in AI: March '25</h3>
+    <p class="card-summary">AI代理概念已存在数十年，最新突破在于高级LLM能够执行复杂动态行为，无需明确编程即可推动代理AI解决方案。文章探讨了AI代理的定义和发展趋势。</p>
+    <div class="card-footer">
+        <span>来源：Zeta Alpha</span>
+        <span>发布日期：2025-03-01</span>
+    </div>
+</a>
+<a href="https://dev.to/alexmercedcoder/ai-weekly-claude-code-dominates-mcp-goes-mainstream-week-of-march-5-2026-15af" class="card" target="_blank">
+    <div class="card-tag">Claude Code</div>
+    <h3 class="card-title">AI Weekly: Claude Code Dominates, MCP Goes Mainstream</h3>
+    <p class="card-summary">过去一周确认了开发者一直在说的话：AI编码工具不再是可选的。Claude Code被评为最常用的AI编码助手，谷歌推送了重大MCP协议贡献。</p>
+    <div class="card-footer">
+        <span>来源：DEV Community</span>
+        <span>发布日期：2026-03-05</span>
+    </div>
+</a>
+<a href="https://natesnewsletter.substack.com/p/coming-into-focus-the-state-of-the" class="card" target="_blank">
+    <div class="card-tag">AI生态</div>
+    <h3 class="card-title">State of the AI Agent Ecosystem in March 2025</h3>
+    <p class="card-summary">OpenAI本周发布了agent，Claude的MCP火热，是时候概述AI agent生态系统中的参与者了——谁热门，谁不热门，我们用什么来构建。</p>
+    <div class="card-footer">
+        <span>来源：Nate's Newsletter</span>
+        <span>发布日期：2025-03-11</span>
+    </div>
+</a>
+        </div>
+    </section>
+    <section id="full-stack">
+        <h2 class="section-title">AI 全栈开发</h2>
+        <div class="grid">
+<a href="https://medium.com/@syntax-sky/completing-the-rag-pipeline-building-a-q-a-interface-with-next-js-and-llms-af84eb4b4821" class="card" target="_blank">
+    <div class="card-tag">RAG</div>
+    <h3 class="card-title">完成 RAG Pipeline：使用 Next.js 和 LLM 构建 Q&A 界面</h3>
+    <p class="card-summary">作者分享了如何将语义搜索API连接到LLM，并构建了一个简单的Q&A UI来查询50万篇文章。检索本身并不有用——用户不想阅读原始数据。</p>
+    <div class="card-footer">
+        <span>来源：Syntax Sky</span>
+        <span>发布日期：2026-02-22</span>
+    </div>
+</a>
+<a href="https://towardsdev.com/building-a-rag-retrieval-augmented-generation-system-with-node-js-react-and-llm-d7c362d5688c" class="card" target="_blank">
+    <div class="card-tag">全栈</div>
+    <h3 class="card-title">使用 Node.js、React 和 LLM 构建全栈 RAG 系统</h3>
+    <p class="card-summary">在现代AI驱动的应用中，高效检索和处理数据在提供智能响应方面起着关键作用。本文介绍如何使用React、Node.js和LLM构建完整的RAG系统。</p>
+    <div class="card-footer">
+        <span>来源：Towards Dev</span>
+        <span>发布日期：2025-02-06</span>
+    </div>
+</a>
+<a href="https://theneuralmaze.substack.com/p/how-to-build-production-ready-rag" class="card" target="_blank">
+    <div class="card-tag">RAG</div>
+    <h3 class="card-title">如何构建生产就绪的 RAG 系统</h3>
+    <p class="card-summary">构建生产级RAG系统，自动摄取、索引并实现对文档的智能检索。本文是关于像真正的AI工程师一样构建子搜索系统的完整指南。</p>
+    <div class="card-footer">
+        <span>来源：The Neural Maze</span>
+        <span>发布日期：2025-10-29</span>
+    </div>
+</a>
+<a href="https://www.iamraghuveer.com/posts/llm-integration-backend-applications/" class="card" target="_blank">
+    <div class="card-tag">LLM集成</div>
+    <h3 class="card-title">将 LLM 集成到后端应用：模式、性能和生产考虑</h3>
+    <p class="card-summary">向量数据库市场从2024年的24.6亿美元增长到2032年预计的106亿美元。本文探讨了将LLM集成到后端应用的生产级模式，重点关注RAG。</p>
+    <div class="card-footer">
+        <span>来源：I am Raghuveer</span>
+        <span>发布日期：2026-02-14</span>
+    </div>
+</a>
+        </div>
+    </section>
+    <section id="agent-tools">
+        <h2 class="section-title">Agent 工具动态</h2>
+        <div class="grid">
+<a href="https://wetheflywheel.com/en/guides/claude-code-vs-cursor-vs-windsurf/" class="card" target="_blank">
+    <div class="card-tag">工具对比</div>
+    <h3 class="card-title">Claude Code vs Cursor vs Windsurf (2026)：完整对比</h3>
+    <p class="card-summary">Claude Code适合终端原生开发者，需要大规模上下文窗口（100万token）和长时间自主会话；Cursor适合想要VS Code界面和8个并行agent的开发者。</p>
+    <div class="card-footer">
+        <span>来源：We The Flywheel</span>
+        <span>发布日期：2025-12-28</span>
+    </div>
+</a>
+<a href="https://ai-coding-flow.com/blog/claude-code-vs-cursor-vs-windsurf-2026/" class="card" target="_blank">
+    <div class="card-tag">工具对比</div>
+    <h3 class="card-title">Claude Code vs Cursor vs Windsurf：使用30天后</h3>
+    <p class="card-summary">在真实项目上使用这三种工具30天后，从代码质量、上下文窗口、多文件编辑、终端集成、定价和学习曲线等多个维度进行对比评测。</p>
+    <div class="card-footer">
+        <span>来源：AI Coding Flow</span>
+        <span>发布日期：2026-02-03</span>
+    </div>
+</a>
+<a href="https://dev.to/pockit_tools/cursor-vs-windsurf-vs-claude-code-in-2026-the-honest-comparison-after-using-all-three-3gof" class="card" target="_blank">
+    <div class="card-tag">工具对比</div>
+    <h3 class="card-title">2026年 Cursor vs Windsurf vs Claude Code 诚实对比</h3>
+    <p class="card-summary">2026年的AI编码工具格局与一年前截然不同。GitHub Copilot不再是王者，本文比较了三种代表不同AI辅助开发理念的工具。</p>
+    <div class="card-footer">
+        <span>来源：DEV Community</span>
+        <span>发布日期：2026-02-03</span>
+    </div>
+</a>
+        </div>
+    </section>
+    <section id="mcp-skills">
+        <h2 class="section-title">Claude MCP 与 插件生态</h2>
+        <div class="grid">
+<a href="https://github.com/alirezarezvani/claude-skills" class="card" target="_blank">
+    <div class="card-tag">MCP</div>
+    <h3 class="card-title">claude-skills: 180+ 生产就绪的 Claude Code 技能</h3>
+    <p class="card-summary">180多个生产就绪的Claude Code、OpenAI Codex和OpenClaw技能和插件，涵盖工程、营销、产品、合规、C层顾问等。通过/plugin marketplace安装。</p>
+    <div class="card-footer">
+        <span>来源：GitHub</span>
+        <span>发布日期：2026-03-10</span>
+    </div>
+</a>
+<a href="https://www.forbes.com/sites/moorinsights/2025/03/06/claude-code-is-a-big-deal-but-maybe-not-in-the-ways-you-think/" class="card" target="_blank">
+    <div class="card-tag">MCP</div>
+    <h3 class="card-title">Claude Code 很重要，但方式可能不同</h3>
+    <p class="card-summary">Claude Code作为终端原生agentic编码工具的重要性分析，虽然不是取代开发者，而是增强开发者的能力，MCP协议正在成为行业标准。</p>
+    <div class="card-footer">
+        <span>来源：Forbes</span>
+        <span>发布日期：2025-03-06</span>
+    </div>
+</a>
+<a href="https://medium.com/@esmatibrahim/model-context-protocol-mcp-revolutionizing-ai-integration-and-context-management-4acc45f24faf" class="card" target="_blank">
+    <div class="card-tag">MCP</div>
+    <h3 class="card-title">Model Context Protocol：彻底改变 AI 集成和上下文管理</h3>
+    <p class="card-summary">MCP正在彻底改变AI集成和上下文管理。本文解释了为什么MCP成为AI agent的标准协议，以及它如何简化开发者的工作流程。</p>
+    <div class="card-footer">
+        <span>来源：Medium</span>
+        <span>发布日期：2025-03-11</span>
+    </div>
+</a>
+        </div>
+    </section>
+    <section id="sdd">
+        <h2 class="section-title">规范驱动开发 (SDD)</h2>
+        <div class="grid">
+<a href="https://claude-world.com/articles/claude-code-evolution/" class="card" target="_blank">
+    <div class="card-tag">SDD</div>
+    <h3 class="card-title">Claude Code 演进：MCP、命令、代理与技能</h3>
+    <p class="card-summary">追踪了9个月的演进历程，从2025年4月到2026年1月，每个工具如何涌现解决特定问题——都朝着相同目标工作。</p>
+    <div class="card-footer">
+        <span>来源：ClaudeWorld</span>
+        <span>发布日期：2026-01-15</span>
+    </div>
+</a>
+        </div>
+    </section>
+</main>
+<footer>
+    <p style="text-align: center; color: var(--text-muted); padding: 4rem 0 2rem; font-size: 0.8rem;">
+        Generated by OpenClaw | Updated on 2026-03-11
+    </p>
+</footer>
+</body>
+</html>
