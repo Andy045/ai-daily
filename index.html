@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Daily - 每日AI资讯</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #e0e0e0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            padding: 40px 0;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 3em;
+            background: linear-gradient(90deg, #00d4ff, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+        .date {
+            color: #888;
+            font-size: 1.1em;
+        }
+        .category {
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .category h2 {
+            color: #00d4ff;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #7c3aed;
+        }
+        .news-item {
+            background: rgba(255,255,255,0.03);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+            transition: transform 0.2s, background 0.2s;
+        }
+        .news-item:hover {
+            transform: translateX(5px);
+            background: rgba(255,255,255,0.06);
+        }
+        .news-item h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .news-item h3 a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .news-item h3 a:hover {
+            color: #00d4ff;
+        }
+        .news-item .summary {
+            color: #aaa;
+            line-height: 1.6;
+            font-size: 0.95em;
+        }
+        .news-item .source {
+            color: #666;
+            font-size: 0.85em;
+            margin-top: 10px;
+        }
+        .stats {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            margin-top: 40px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #444;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 AI Daily</h1>
+            <p class="date">2026年3月11日 星期三</p>
+        </header>
+
+        <div class="category">
+            <h2>🔥 AI领域热点新闻</h2>
+            
+            <div class="news-item">
+                <h3><a href="https://www.wired.com/story/yann-lecun-raises-dollar1-billion-to-build-ai-that-understands-the-physical-world/" target="_blank">Yann LeCun raises $1B to build AI that understands the physical world</a></h3>
+                <p class="summary">深度学习先驱Yann LeCun宣布筹集10亿美元成立新公司，致力于构建能够理解物理世界的人工智能系统。该项目旨在突破当前AI在物理常识推理方面的局限，推动通用人工智能向更安全、更有用的方向发展。（来源：Wired，441 points）</p>
+            </div>
+            
+            <div class="news-item">
+                <h3><a href="https://www.deloitte.com/us/en/what-we-do/capabilities/applied-artificial-intelligence/content/state-of-ai-in-the-enterprise.html" target="_blank">The State of AI in the Enterprise 2026</a></h3>
+                <p class="summary">德勤发布2026年企业AI状态报告，揭示企业AI采用率持续增长，生成式AI投资回报率显著提升。报告指出AI治理和负责任AI成为企业关注重点，同时人才短缺仍是主要挑战。（来源：Deloitte）</p>
+            </div>
+            
+            <div class="news-item">
+                <h3><a href="https://www.bloomberg.com/news/articles/2026-03-06/roblox-s-teen-millionaires-are-disrupting-the-gaming-industry" target="_blank">Roblox is minting teen millionaires</a></h3>
+                <p class="summary">Roblox平台上的青少年开发者正在颠覆游戏行业，凭借AI辅助开发工具，越来越多的年轻创作者实现可观的收入。平台通过集成AI技术降低了游戏开发门槛，推动用户生成内容生态爆发式增长。（来源：Bloomberg，117 points）</p>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>🛠️ AI全栈开发</h2>
+            
+            <div class="news-item">
+                <h3><a href="https://infinity.inc/case-studies/qwen3-optimization" target="_blank">Surpassing vLLM with a Generated Inference Stack</a></h3>
+                <p class="summary">Infinity公司发布革命性推理栈，宣称在Qwen3模型推理性能上超越vLLM。该技术通过自动化优化和动态资源调度，实现推理效率的显著提升，为大模型部署提供更高效的解决方案。（来源：Infinity）</p>
+            </div>
+            
+            <div class="news-item">
+                <h3><a href="https://github.com/RunanywhereAI/rcli" target="_blank">Launch HN: RunAnywhere – Faster AI Inference on Apple Silicon</a></h3>
+                <p class="summary">YC W26初创公司RunAnywhere推出针对Apple Silicon优化的AI推理引擎，显著提升本地设备上的模型推理速度。该工具使得在Mac设备上运行大型语言模型变得更加高效便捷。（来源：Hacker News，207 points）</p>
+            </div>
+            
+            <div class="news-item">
+                <h3><a href="https://github.com/RightNow-AI/autokernel" target="_blank">AutoKernel: Autoresearch for GPU Kernels</a></h3>
+                <p class="summary">RightNow AI发布AutoKernel项目，实现GPU内核自动搜索与优化。该工具利用AI自动发现最优计算内核，显著提升深度学习模型的GPU利用效率，降低开发者手动优化成本。（来源：GitHub）</p>
+            </div>
+        </div>
+
+        <div class="category">
+            <h3>📱 Agent工具动态</h3>
+            
+            <div class="news-item">
+                <h3><a href="https://claude2028.org/" target="_blank">Claude 2028 – For a More Perfect Union</a></h3>
+                <p class="summary">Anthropic发布Claude 2028愿景，阐述构建更完美人机协作的愿景。强调AI助手应当成为增强人类能力的工具，在保持安全可控的前提下，帮助人类解决复杂问题，推动社会进步。（来源：claude2028.org）</p>
+            </div>
+            
+            <div class="news-item">
+                <h3><a href="https://www.claudecodecamp.com/p/i-m-building-agents-that-run-while-i-sleep" target="_blank">Agents that run while I sleep</a></h3>
+                <p class="summary">开发者分享构建夜间运行的AI代理经验，探讨如何设计能够自主执行长期任务的智能体。这类代理可以在用户休息时完成数据分析、报告生成等后台任务，实现真正的自动化工作流程。（来源：Claude Code Camp，310 points）</p>
+            </div>
+            
+            <div class="news-item">
+                <h3><a href="https://www.bassimeledath.com/blog/levels-of-agentic-engineering" target="_blank">Levels of Agentic Engineering</a></h3>
+                <p class="summary">文章系统阐述代理工程的层次结构，从简单脚本到完全自主的智能体，分析不同层级AI系统的设计要点与挑战。为开发者构建更高级别的AI代理提供系统性指导框架。（来源：Bassim Eledath，155 points）</p>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>🔌 Claude Code生态</h2>
+            
+            <div class="news-item">
+                <h3><a href="https://github.com/anthropics/claude-plugins-official" target="_blank">Anthropic Claude Plugins Official</a></h3>
+                <p class="summary">Anthropic官方发布Claude插件系统，为开发者提供扩展Claude能力的标准方式。通过插件机制，开发者可以自定义工具、工作流程和集成第三方服务，构建个性化的AI开发环境。（来源：GitHub）</p>
+            </div>
+            
+            <div class="news-item">
+                <h3><a href="https://github.com/affaan-m/everything-claude-code" target="_blank">Everything Claude Code</a></h3>
+                <p class="summary">开发者整理的Claude Code全面资源列表，包含插件、工具、教程和最佳实践。该项目帮助开发者快速上手Claude Code，掌握AI辅助编程的核心技能。（来源：GitHub）</p>
+            </div>
+            
+            <div class="news-item">
+                <h3><a href="https://github.com/czlonkowski/n8n-mcp" target="_blank">n8n MCP - Workflow Automation</a></h3>
+                <p class="summary">n8n工作流自动化平台集成MCP协议，实现与Claude Code的无缝连接。用户可以通过可视化界面创建复杂自动化流程，AI代理能够触发和执行工作流，开启智能自动化新范式。（来源：GitHub）</p>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>📋 SDD规范驱动开发</h2>
+            
+            <div class="news-item">
+                <h3><a href="https://github.com/onepaneai/mantis" target="_blank">I Reduced 5 hours of Testing my Agentic AI application to 10 mins</a></h3>
+                <p class="summary">开发者分享如何将AI代理应用的测试时间从5小时缩短到10分钟的实践经验。通过引入结构化测试规范和自动化测试框架，显著提升Agent应用的质量保证效率，降低开发迭代成本。（来源：GitHub）</p>
+            </div>
+            
+            <div class="news-item">
+                <h3><a href="https://ziglang.org/devlog/2026/#2026-03-10" target="_blank">Zig – Type Resolution Redesign and Language Changes</a></h3>
+                <p language="summary">Zig语言在2026年进行重大重设计，推崇简洁直接的编程哲学。该语言的去中心化调试和编译模型为AI系统开发提供新的可能性，其零成本抽象理念特别适合高性能AI应用场景。（来源：Zig Lang，164 points）</p>
+            </div>
+            
+            <div class="news-item">
+                <h3><a href="https://bloomberg.github.io/js-blog/post/standardizing-source-maps/" target="_blank">Standardizing source maps</a></h3>
+                <p class="summary">Bloomberg推动源代码映射标准化，为AI辅助调试提供更精确的代码定位。标准化后的sourcemap将使AI代理能够更准确地理解和修改源代码，推动智能开发工具发展。（来源：Bloomberg GitHub）</p>
+            </div>
+        </div>
+
+        <div class="stats">
+            <p>📊 今日共计收录 <strong>15</strong> 条资讯</p>
+            <p>🔍 来源: Hacker News, GitHub, Wired, Deloitte, Bloomberg</p>
+        </div>
+
+        <footer>
+            <p>🤖 AI Daily 自动生成 | 更新于 2026-03-11</p>
+        </footer>
+    </div>
+</body>
+</html>
